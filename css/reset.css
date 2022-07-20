@@ -1,19 +1,22 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
+* { font-family: Montserrat,HelveticaNeue,Helvetica Neue,sans-serif,Montserrat,HelveticaNeue,Helvetica Neue,sans-serif;
+    margin: 0 auto;
     padding: 0;
     border: none;
     box-sizing: border-box;
     vertical-align: middle;
+    letter-spacing: 1.2px;
+    
 }
 
 ul,
-li {list-style-type: none;
-   
-   
+li {
+    list-style: none;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; color: white;
 }
+
+.container {max-width: 1380px; }

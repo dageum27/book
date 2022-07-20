@@ -1,4 +1,70 @@
 @charset "UTF-8";
 
 
+header {width: 100%; text-align: center;}
+.inf_redbar {background-color: #ff4157; color:white; display: flex; align-items: center; padding: 10px 0;}
+.redbar{font-size: 16px;}
+.barclose {cursor: pointer; margin: 0 10px 0 0; text-align: right;
+}
+
+#header_top {color: #666666; font-size: 13px; display: flex; border-bottom: rgba(219, 218, 218, 0.8) 1px solid; margin:0 100px auto ;
+justify-content: space-between;} 
+#header_top p {display: inline-block;}
+#mif {padding: 10px 0px; margin: 0;}
+.me_over {display: inline-block;
+    padding: 10px 20px 10px 15px;
+    cursor: pointer;}
+.menu {display: flex; margin: 0;}
+.sdown, #ul_show {display: none;}
+
+
+ 
+.triple_contai {text-align: left; margin:0 100px auto;display: flex; align-items: center; justify-content: space-between; height: 104px;}
+
+
+.box {display: flex; margin: 0;  height: 43px; cursor: pointer;}
+
+.box p{font-size: 15px; color: #222222; 
+    
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    padding:0 0 0 15px;
+    
+    }
+.box span {font-size: 13px; color: #666666; padding: 10px 0;}
+
+.spin {transform: rotateY(0); display: inline-block;
+    -webkit-transition: 1.2s ease;
+    -moz-transition: 1.2 ease;
+    -ms-transition: 1.2s ease;
+    -o-transition: 1.2s ease;
+    transition: 1.2s ease;}
+
+
+
+#my_cart {width: 300px; height: 100%; position: fixed; right: 0; top: 0; background-color: white; display: none;}
+.overlay {visibility: hidden;
+opacity: 0;
+background-color: #212331;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0; 
+width: 100%;
+height: 100%;
+transition: all .5s ease;}
+
+#my_cart p {color: black; font-size: 18px; font-weight: 700;}
+#carttop {display: flex; padding: 20px; border-bottom: 0.5px rgba(207, 207, 207, 0.5) solid;
+}
+
+.menurh { display: flex; font-weight: bold; width: 100%; background-color: #ff4157; padding: 5px 0;}
+.mover span {font-size: 9px; border: 1px solid; padding: 0px 2px; float: right; margin-top: -12px; margin-left: -40px; opacity: 0.8;}
+
+.menurh p, .menurh p a {font-size: 13px; padding: 2px 8px; margin: 1px auto;}
+
+.mover {}
+
 
