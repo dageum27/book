@@ -21,19 +21,32 @@ a {
     text-decoration: none;
 }
  
-.container {   width: 100%; max-width: 1380px;
+.container {max-width: 1380px;
    
-    margin-right:15px auto;
-    margin-left:15px auto;}
+    margin:0 45px auto;}
 
 button {cursor: pointer;}
 
-/* input[type]:focus {text-align: left;
-  border: none; outline: none;
-}
 
-input[type]:focus outline: none; */
 .temple {font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol ;}
+
+.flex {display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+} 
+
+::placeholder {
+  color: gray;
+  opacity: 0,6;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: gray;
+  opacity: 0,6;
+ }
+
+ :-ms-input-placeholder { color: gray;
+  opacity: 0,6;}
 
 /* .material-symbols-outlined {
   font-variation-settings:
