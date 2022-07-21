@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
+
+
 * { font-family: Montserrat,HelveticaNeue,Helvetica Neue,sans-serif,Montserrat,HelveticaNeue,Helvetica Neue,sans-serif;
     margin: 0 auto;
     padding: 0;
     border: none;
     box-sizing: border-box;
     vertical-align: middle;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.25px;
     
 }
 
@@ -18,7 +20,53 @@ li {
 a {
     text-decoration: none;
 }
-
-.container {max-width: 1380px;}
+ 
+.container {   width: 100%; max-width: 1380px;
+   
+    margin-right:15px auto;
+    margin-left:15px auto;}
 
 button {cursor: pointer;}
+
+/* input[type]:focus {text-align: left;
+  border: none; outline: none;
+}
+
+input[type]:focus outline: none; */
+.temple {font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol ;}
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 10,
+  'GRAD' -25,
+  'opsz' 10
+}
+
+.material-symbols-sharp {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' -25,
+    'opsz' 20
+  }
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' -25,
+  'opsz' 20
+} */
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-envelope-o:before {
+  content: "\f003";
+}
+

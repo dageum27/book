@@ -7,19 +7,20 @@ header {width: 100%; text-align: center;}
 .barclose {cursor: pointer; margin: 0 10px 0 0; text-align: right;
 }
 
-#header_top {color: #666666; font-size: 13px; display: flex; border-bottom: rgba(219, 218, 218, 0.8) 1px solid; margin:0 100px auto ;
+#header_top {color: #666666; font-size: 13px; display: flex; border-bottom: rgba(219, 218, 218, 0.8) 1px solid; margin:0 50px auto ;
 justify-content: space-between;} 
 #header_top p {display: inline-block;}
 #mif {padding: 10px 0px; margin: 0;}
 .me_over {display: inline-block;
-    padding: 10px 20px 10px 15px;
+    padding: 10px 0px 10px 22px;
     cursor: pointer;}
 .menu {display: flex; margin: 0;}
+.menu .material-symbols-sharp{width: 18px;}
 .sdown, #ul_show {display: none;}
 
 
- 
-.triple_contai {text-align: left; margin:0 100px auto;display: flex; align-items: center; justify-content: space-between; height: 104px;}
+ .box2 img {width: 230px; }
+.triple_contai {text-align: left; margin:0 50px auto;display: flex; align-items: center; justify-content: space-between; height: 104px;}
 
 
 .box {display: flex; margin: 0;  height: 43px; cursor: pointer;}
@@ -35,13 +36,13 @@ justify-content: space-between;}
     }
 .box span {font-size: 13px; color: #666666; padding: 10px 0;}
 
-.spin {transform: rotateY(0); display: inline-block;
+.spin:hover {transform: rotateY(360deg); display: inline-block;
     -webkit-transition: 1.2s ease;
     -moz-transition: 1.2 ease;
     -ms-transition: 1.2s ease;
     -o-transition: 1.2s ease;
     transition: 1.2s ease;}
-
+ 
 
 
 #my_cart {width: 300px; height: 100%; position: fixed; right: 0; top: 0; background-color: white; display: none;}
@@ -64,50 +65,52 @@ transition: all .5s ease;}
 
 
 .menurh { display: flex; align-items: center; justify-content: space-between; font-weight: 450; width: 100%; background-color: #ff4157; padding: 5px 0;}
-.mover span {font-size: 9px; border: 1px solid; padding: 0px 2px; float: right; margin-top: -12px; margin-left: -40px; opacity: 0.6;}
-.menurh> .inf_redbar {margin: 0;}
-.menurh p, .menurh p a {font-size: 13px; padding: 2px 8px; margin: 1px auto; color: white;}
+.mover .flo {font-size: 9px; border: 1px solid; padding: 0px 2px; float: right; margin-top: -12px; margin-left: -120px; opacity: 0.6;}
+.menurh> .inf_redbar {margin: 0; align-items: flex-end;}
+.menurh p, .menurh p a {font-size: 13px; padding: 2px 8px; margin: 1px auto; color: white; height: 22px;}
 
-.mover {}
+
 
 .headersearch {margin: 5px 15px 5px 0; height: 40px; background-color: white; text-align: left;
     width: 310px;}
-#search{margin:0px 10px; height: 38px; border: none; width: 200px; 
+
+#search{margin:0px 10px ; height: 38px; border: none; width: 80%;
 }
-.headersearch form { margin: 1px 2px; display: flex; justify-content: space-between; align-items: center;}
-input[type=search]:focus {text-align: left;
+.headersearch form {width: 100%; margin: 1px 2px; display: flex; justify-content: space-around; align-items: center;}
+input[type=search]:focus, input[type=email]:focus  {text-align: left;
     border: none; outline: none; font-size: 15px; color: #a9a9a9; margin: 0;
   }
+  .menurh .material-symbols-rounded {height: 24px;}
 
-
-.sbtn {background-color: #222222; margin: 0; width: 38px; height: 36px;}
+.sbtn {background-color: #222222; margin: 1px 4px; width: 38px; height: 36px;}
 .sbtn img {width: 18px;}
 .headersearch button:hover {background-color: #ff4157; transition: 0.5s ease;}
 
 
 
-footer {background-image: url(//cdn.shopify.com/s/files/1/0319/5758/1961/files/footer_banner.png?v=1582281059);
 
 
-}
-
-.f_m {background-image: url(//cdn.shopify.com/s/files/1/0319/5758/1961/files/footer_banner.png?v=1582281059);}
+.f_al h4 { font-size: 16px; margin-bottom: 10px; color: #222222; font-weight: 550;}
 
 
 
 
+.fm li, .fm li a {padding-top: 13px; font-size: 14px; color: #777777;}
 
 
 
+.f_ali {display: flex; flex-wrap: wrap;  padding: 70px 0; width: 100%; margin: 0 10px auto;}
+.f_inbox {flex-grow: 1; padding:0 15px 0 0;  flex-basis: 0;
+    
+    max-width: 100%;}
+.f_inbox:nth-of-type(1) {flex: 0 0 30%; 
+    max-width: 33%;}
 
 
+#email {padding: 13px; width: 260px; height: 52px;}
 
 
-
-
-
-
-
+input[type=email]:focus {border: 1px cornflowerblue solid; box-shadow: 0px 0px 3px 3px rgba(100, 148, 237, 0.781);}
 
 
 
