@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+<script>
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=20&query=%EC%9D%B8%EA%B0%84%EC%9D%80%EC%99%9C%EB%B3%91%EC%97%90%EA%B1%B8%EB%A6%AC%EB%8A%94%EA%B0%80",
+data: { query:"인간은 왜 병에 걸리는가" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%95%8C%EC%9D%B4+%EB%8B%AD%EC%9D%84+%EB%82%B3%EB%8A%94%EB%8B%A4",
+data: { query:"알이 닭을 낳는다" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%B5%9C%EC%9E%AC%EC%B2%9C%EC%9D%98+%EC%9D%B8%EA%B0%84%EA%B3%BC+%EB%8F%99%EB%AC%BC",
+data: { query:"최재천의 인간과 동물" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EB%8C%80%EB%8B%B4%28%EC%9D%B8%EB%AC%B8%ED%95%99%EA%B3%BC+%EC%9E%90%EC%97%B0%EA%B3%BC%ED%95%99%EC%9D%B4+%EB%A7%8C%EB%82%98%EB%8B%A4%29",
+data: { query:"대담(인문학과 자연과학이 만나다)" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%82%AC%ED%9A%8C%EC%83%9D%EB%AC%BC%ED%95%99%2C+%EC%9D%B8%EA%B0%84%EC%9D%98+%EB%B3%B8%EC%84%B1%EC%9D%84+%EB%A7%90%ED%95%98%EB%8B%A4",
+data: { query:"사회생물학, 인간의 본성을 말하다" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EA%B8%80%EC%93%B0%EA%B8%B0%EC%9D%98+%EC%B5%9C%EC%86%8C%EC%9B%90%EC%B9%99",
+data: { query:"글쓰기의 최소원칙" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%97%B4%EB%8C%80%EC%98%88%EC%B0%AC",
+data: { query:"열대예찬" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=21%EC%84%B8%EA%B8%B0+%EB%8B%A4%EC%9C%88+%ED%98%81%EB%AA%85",
+data: { query:"21세기 다윈 혁명" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%9D%B8%EB%AC%B8%ED%95%99+%EC%BD%98%EC%84%9C%ED%8A%B8",
+data: { query:"인문학 콘서트" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=20&query=%EC%88%A0%EC%88%A0+%EA%B5%AC%EC%88%A0+%EB%A9%B4%EC%A0%91+3",
+data: { query:"술술 구술 면접 3" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EA%B3%BC%ED%95%99+%EC%A2%85%EA%B5%90+%EC%9C%A4%EB%A6%AC%EC%9D%98+%EB%8C%80%ED%99%94",
+data: { query:"과학 종교 윤리의 대화" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%84%B8%EC%83%81%EC%9D%84+%EB%B3%B4%EB%8A%94+%EB%88%88+2" ,
+data: { query:"세상을 보는 눈 2" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%ED%86%B5%EC%84%AD%28%EC%A7%80%EC%8B%9D%EC%9D%98+%EB%8C%80%ED%86%B5%ED%95%A9%2C%EC%82%AC%EC%9D%B4%EC%96%B8%EC%8A%A4+%ED%81%B4%EB%9E%98%EC%8B%9D+5%29",
+data: { query:"통섭(지식의 대통합,사이언스 클래식 5)" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+
+
+
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EA%B3%BC%ED%95%99%EC%9E%90%EC%9D%98+%EC%84%9C%EC%9E%AC",
+data: { query:"과학자의 서재" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+$.ajax({
+method: "GET",
+url: "",
+data: { query:"통섭의 식탁" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+$.ajax({
+method: "GET",
+url: "",
+data: { query:"" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+</script>
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%83%9D%EB%AA%85%EC%9D%98+%EA%B8%B0%EC%96%B5",
+            data: { query: "생명의 기억" },
+            headers: { Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9" }
+        })
+
+
+        .done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+    </script>
+
+
+    <script>
+
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%82%B4%EC%9D%B8%EC%9D%98+%EC%A7%84%ED%99%94%EC%8B%AC%EB%A6%AC%ED%95%99",
+            data: { query: "살인의 진화심리학" },
+            headers: { Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9" }
+        })
+
+
+        .done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=2&size=10&query=%EC%9D%B4%ED%86%A0%EB%A1%9D+%EB%A9%8B%EC%A7%84+%EA%B3%A4%EC%B6%A9",
+            data: { query: "이토록 멋진 곤충" },
+            headers: { Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9" }
+        })
+
+        .done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+    </script>
+
+
+
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%9D%B4%EA%B8%B0%EC%A0%81%EC%9D%B8+%EC%9C%A0%EC%A0%84%EC%9E%90",
+            data: { query: "이기적인 유전자" },
+            headers: { Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9" }
+        })
+
+        .done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+    </script>
+
+
+
+<p></p>
+
+
+<script>
+
+$.ajax({
+method: "GET",
+url: "https://dapi.kakao.com/v3/search/book?sort=accuracy&page=1&size=10&query=%EC%83%9D%EB%AA%85%EC%9D%B4+%EC%9E%88%EB%8A%94+%EA%B2%83%EC%9D%80+%EB%8B%A4+%EC%95%84%EB%A6%84%EB%8B%B5%EB%8B%A4",
+data: { query:"생명이 있는 것은 다 아름답다" },
+headers:{Authorization: "KakaoAK 2438cfc3561c678831d450e7c55eeca9"}
+})
+
+
+
+.done(function( msg ) {
+console.log( msg.documents[0].title );
+console.log( msg.documents[0].thumbnail );
+$("p").append("<br/>"+msg.documents[0].title+"<br />");
+$("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
